@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&display=swap");
+
+body {
+  margin: 0;
+  /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', */
+  /* sans-serif; */
+  font-family: "DM Sans", sans-serif;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.flex-center {
+  @apply flex items-center justify-center;
+}
+.input-radius,
+.button-radius {
+  @apply rounded-[11px] rounded-tl-none;
+}
+.active {
+  @apply bg-green-500 text-white;
+}
+.inactive {
+  @apply bg-red-500 text-white;
+}
+.login-box-radius,
+.card-radius {
+  @apply rounded-[21px] rounded-tl-none;
+}
+.animte-slide-up {
+  animation: slide-up 300ms linear;
+  transition: ease-in-out;
+}
+@keyframes slide-up {
+  from {
+    margin-top: 8px;
+  }
+  to {
+    margin-top: 0;
+  }
+}
